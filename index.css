@@ -1066,7 +1066,8 @@ p {
     color: var(--green);
 }
 
-#section06 .carousel-control {
+#section06 .swiper-button-prev,
+#section06 .swiper-button-next {
     background-color: transparent;
     border: none;
     font-size: 14px;
@@ -1077,29 +1078,39 @@ p {
     line-height: 25.2px;
 }
 
-#section06 .carousel-control::before {
+
+#section06 .swiper-button-prev {
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    /* transform: translateY(-50%); */
+    padding-left: 15px;
+}
+
+#section06 .swiper-button-prev::after {
     content: '';
     width: 35px;
     height: 2px;
     background: rgb(163, 163, 163);
     position: absolute;
-    top: 25px;
+    top: 35px;
 }
 
-#section06 .carousel-control-prev {
+#section06 .swiper-button-next {
     position: absolute;
     top: 60%;
-    left: 0;
-    /* transform: translateY(-50%); */
-    padding-left: 15px;
-}
-
-#section06 .carousel-control-next {
-    position: absolute;
-    top: 60%;
-    right: 0;
+    right: 5px;
     /* transform: translateY(-50%); */
     padding-right: 15px;
+}
+
+#section06 .swiper-button-next::after {
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: rgb(163, 163, 163);
+    position: absolute;
+    top: 35px;
 }
 
 /* //section07//------------------------------------------------------------ */
