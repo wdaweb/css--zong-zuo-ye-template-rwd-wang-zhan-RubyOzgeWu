@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./all.min.css">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./rwd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./odometer-theme-car.css">
     <title>Document</title>
 </head>
@@ -119,15 +122,15 @@
     </section>
     <!-- section01:輪播 ------------------------------------------------------------->
     <section id="section01">
-        <div class="container" id="myCarousel">
+        <div class="container swiper mySwiper swiper-h" id="myCarousel">
             <!-- 輪播指示 -->
-            <ol class="carousel-indicator">
-                <li></li>
-                <li></li>
-            </ol>
+            <!-- <div class="carousel-indicator">
+                <button id="btn-slide-1">
+                    <button id="btn-slide-2">
+            </div> -->
             <!-- 輪播內容 -->
-            <div class="carousel-inner">
-                <div class="carousel-item slide-1">
+            <div class="carousel-inner swiper-wrapper">
+                <div class="carousel-item slide-1 swiper-slide">
                     <div class="container">
                         <div class="row flex-column">
                             <div class="col carousel-caption carousel-title">
@@ -136,14 +139,16 @@
                             <div class="col carousel-caption">
                                 <p>Our Organic drinks contain all necessary elements and vitamins for your health.</p>
                             </div>
-                            <div class="col carousel-btn"><button>
+                            <div class="col carousel-btn">
+                                <button>
                                     <p>SHOP NOW</p>
-                                </button></div>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                 </div>
-                <div class="carousel-item slide-2">
+                <div class="carousel-item slide-2 swiper-slide">
                     <div class="container">
                         <div class="row flex-column">
                             <div class="col carousel-caption carousel-title">
@@ -160,6 +165,7 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <!-- section02 ------------------------------------------------------------->
@@ -518,128 +524,144 @@
             <h1>NEW Flavors</h1>
             <div class="row flex-column">
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left">
                         <div class="card-img">
                             <img src="./images/product-1-95x175.png" alt="">
                         </div>
-                        <!-- <div class="sale-tag">
-                                <p>SALE</p>
-                            </div> -->
+                        <div class="sale-tag">
+                            <p>SALE</p>
+                        </div>
                         <h5>MANGO</h5>
                         <p><span><del>$30.00</del></span> <span>$23.00</span></p>
                         <div class="btn-box">
-                            <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button class="btn btn-shoppingCar"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button class="btn btn-search"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></button>
+                            <button class="btn btn-shoppingCar"><a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left">
                         <div class="card-img">
                             <img src="./images/product-2-95x175.png" alt="">
                         </div>
-                        <!-- <div class="new-tag">
+                        <div class="new-tag">
                             <p>NEW</p>
-                        </div> -->
+                        </div>
                         <h5>STRAWBERRY</h5>
                         <p><span>$13.00</span></p>
                         <div class="btn-box">
-                            <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button class="btn btn-shoppingCar"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button class="btn btn-search"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></button>
+                            <button class="btn btn-shoppingCar"><a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left">
                         <div class="card-img">
                             <img src="./images/product-3-95x175.png" alt="">
                         </div>
                         <h5>APPLE</h5>
                         <p><span>$16.99</span></p>
                         <div class="btn-box">
-                            <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button class="btn btn-shoppingCar"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button class="btn btn-search"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></button>
+                            <button class="btn btn-shoppingCar"><a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <div class="card-img">
                             <img src="./images/product-4-95x175.png" alt="">
                         </div>
-                        <!-- <div class="new-tag">
-                                <p>NEW</p>
-                            </div> -->
+                        <div class="new-tag">
+                            <p>NEW</p>
+                        </div>
                         <h5>GUAVA</h5>
                         <p><span>$12.00</span></p>
                         <div class="btn-box">
-                            <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button class="btn btn-shoppingCar"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button class="btn btn-search"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></button>
+                            <button class="btn btn-shoppingCar"><a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <div class="card-img">
                             <img src="./images/product-5-95x175.png" alt="">
                         </div>
-                        <!-- <div class="new-tag">
-                                <p>NEW</p>
-                            </div> -->
+                        <div class="new-tag">
+                            <p>NEW</p>
+                        </div>
                         <h5>GRAPES</h5>
                         <p><span>$11.00</span></p>
                         <div class="btn-box">
-                            <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button class="btn btn-shoppingCar"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button class="btn btn-search"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></button>
+                            <button class="btn btn-shoppingCar"><a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <div class="card-img">
                             <img src="./images/product-6-95x175.png" alt="">
                         </div>
                         <h5>BANANA</h5>
                         <p><span>$15.99</span></p>
                         <div class="btn-box">
-                            <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button class="btn btn-shoppingCar"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button class="btn btn-search"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></button>
+                            <button class="btn btn-shoppingCar"><a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-left">
                         <div class="card-img">
                             <img src="./images/product-7-95x175.png" alt="">
                         </div>
-                        <!-- <div class="sale-tag">
-                                <p>SALE</p>
-                            </div> -->
+                        <div class="sale-tag">
+                            <p>SALE</p>
+                        </div>
                         <h5>CARROTS</h5>
                         <p><span><del>$33.00</del></span> <span>$24.00</span></p>
                         <div class="btn-box">
-                            <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button class="btn btn-shoppingCar"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button class="btn btn-search"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></button>
+                            <button class="btn btn-shoppingCar"><a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-right">
                         <div class="card-img">
                             <img src="./images/product-8-95x175.png" alt="">
                         </div>
                         <h5>ORANGE</h5>
                         <p><span>$14.99</span></p>
                         <div class="btn-box">
-                            <button class="btn btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button class="btn btn-shoppingCar"><i class="fa-solid fa-cart-shopping"></i></button>
+                            <button class="btn btn-search"><a href="#"><i
+                                        class="fa-solid fa-magnifying-glass"></i></a></button>
+                            <button class="btn btn-shoppingCar"><a href="#"><i
+                                        class="fa-solid fa-cart-shopping"></i></a></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- section04 ------------------------------------------------------------->
+    <!-- section04: odemeter ------------------------------------------------------------->
     <section id="section04">
         <div class="container">
             <div class="row">
@@ -673,20 +695,30 @@
     </section>
     <!-- section05:why organic ------------------------------------------------------------->
     <section id="section05">
-        <div class="container">
+        <div class="container ">
             <div class="row flex-column">
                 <div class="col carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item">
-                            <img src="./images/product-big-1-470x324.png">
-                            <h4><a href="#">AURORE GRAPE</a></h4>
-                            <p><span><del>$20.00</del></span> <span>$15.00</span></p>
-                            <ol class="carousel-indicator">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ol>
+                    <div class="carousel-inner swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="carousel-item swiper-slide">
+                                <img src="./images/product-big-1-470x324.png">
+                                <h4><a href="#">AURORE GRAPE</a></h4>
+                                <p><span><del>$20.00</del></span> <span>$15.00</span></p>
+                            </div>
+
+                            <div class="carousel-item swiper-slide">
+                                <img src="./images/product-big-2-470x324.png">
+                                <h4><a href="#">BANANA BERRY</a></h4>
+                                <p><span><del>$18.00</del></span> <span>$13.00</span></p>
+                            </div>
+
+                            <div class="carousel-item swiper-slide">
+                                <img src="./images/product-big-2-470x324.png">
+                                <h4><a href="#">BANANA BERRY</a></h4>
+                                <p><span><del>$18.00</del></span> <span>$13.00</span></p>
+                            </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <div class="col accordion">
@@ -694,9 +726,12 @@
                     <div class="accordion-wrap">
                         <div class="accordion-item">
                             <a href="#" class="accordion-header">Organic drinks contain more antioxiodants.</a>
-                            <button class="accordion-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                            <div class="accordion-btn accordion-btn1">
+                                <div class="open"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="close"><i class="fa-solid fa-chevron-down"></i></div>
+                            </div>
                         </div>
-                        <div class="accordion-collapse">
+                        <div class="accordion-collapse collapse1">
                             <p>There are many substances that can act as antioxidants; chief among them are vitamins
                                 A and
                                 C, as well as beta-carotene and manganese. A lack of antioxidant-rich foods can lead
@@ -708,30 +743,36 @@
                     <div class="accordion-wrap">
                         <div class="accordion-item">
                             <a href="#" class="accordion-header">Organic drinks are better for the environment.</a>
-                            <button class="accordion-btn"><i class="fa-solid fa-chevron-right"></i></button>
-                            <div class="accordion-collapse">
-                                <p>While you're helping yourself be as healthy as can be, how about helping the
-                                    environment and
-                                    your fellow humans? Organic farming practices help conserve water and improve soil
-                                    quality.
-                                    Given the droughts we see occurring every year and the dire reports from
-                                    environmental
-                                    experts, these are no small reasons to go organic.</p>
+                            <div class="accordion-btn accordion-btn2">
+                                <div class="open"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="close"><i class="fa-solid fa-chevron-down"></i></div>
                             </div>
+                        </div>
+                        <div class="accordion-collapse collapse2">
+                            <p>While you're helping yourself be as healthy as can be, how about helping the
+                                environment and
+                                your fellow humans? Organic farming practices help conserve water and improve soil
+                                quality.
+                                Given the droughts we see occurring every year and the dire reports from
+                                environmental
+                                experts, these are no small reasons to go organic.</p>
                         </div>
                     </div>
 
                     <div class="accordion-wrap">
-                        <div class="accordion-item">
+                        <div class="accordion-item none-bordered">
                             <a href="#" class="accordion-header">They're higher in nutrients.</a>
-                            <button class="accordion-btn"><i class="fa-solid fa-chevron-right"></i></button>
-                            <div class="accordion-collapse">
-                                <p>Along with fewer pesticides, this is probably the No. 1 reason folks decide to eat
-                                    organic.
-                                    Studies have shown that organic drinks are often higher in vitamin C, iron,
-                                    magnesium, and
-                                    phosphorous than their non-organic counterparts.</p>
+                            <div class="accordion-btn accordion-btn3">
+                                <div class="open"><i class="fa-solid fa-chevron-right"></i></div>
+                                <div class="close"><i class="fa-solid fa-chevron-down"></i></div>
                             </div>
+                        </div>
+                        <div class="accordion-collapse collapse3">
+                            <p>Along with fewer pesticides, this is probably the No. 1 reason folks decide to eat
+                                organic.
+                                Studies have shown that organic drinks are often higher in vitamin C, iron,
+                                magnesium, and
+                                phosphorous than their non-organic counterparts.</p>
                         </div>
                     </div>
                 </div>
@@ -788,7 +829,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <div class="carousel-item-content content-2">
                         <p>I'm very grateful to you for introducing me and my whole family to your extensive range
                             of
@@ -811,7 +852,7 @@
                             <p><span><i>Client</i></span></p>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <button class="carousel-control carousel-control-prev">prev</button>
             <button class="carousel-control carousel-control-next">next</button>
@@ -954,7 +995,7 @@
                         </ul>
                     </div>
                     <!-- 其他人 -->
-                    <div class="carousel-item-content flex-column content-2">
+                    <!-- <div class="carousel-item-content flex-column content-2">
                         <img src="./images/team-5-270x227.jpg">
                         <h5><a href="#">Peter McMillan</a></h5>
                         <p>Peter is the Head of Livedrink's Supply Chain</p>
@@ -969,7 +1010,7 @@
                         <img src="./images/team-7-270x227.jpg">
                         <h5><a href="#">Sam Williams</a></h5>
                         <p>Sam is our #1 expert in domestic Sales Management.</p>
-                    </div>
+                    </div> -->
                 </div>
                 <ol class="carousel-indicator">
                     <li></li>
@@ -996,7 +1037,7 @@
                         </div>
                     </div>
                     <!-- 其他幾篇 -->
-                    <div class="carousel-item-content flex-column content-2">
+                    <!-- <div class="carousel-item-content flex-column content-2">
                         <img src="./images/post-2-370x239.jpg" alt="">
                         <div class="post-content flex-column">
                             <p class="time">August 9, 2020</p>
@@ -1013,7 +1054,7 @@
                             <p class="text">Combining milk and fruits is the best solution for your daily meal, whether
                                 it's breakfast, lunch, or any other...</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <ol class="carousel-indicator">
                     <li></li>
@@ -1034,7 +1075,7 @@
                     <div class="carousel-item-content content-2">
                         <img src="./images/clients-2-105x118.png">
                     </div>
-                    <div class="carousel-item-content content-3">
+                    <!-- <div class="carousel-item-content content-3">
                         <img src="./images/clients-3-111x98.png">
                     </div>
                     <div class="carousel-item-content content-4">
@@ -1045,7 +1086,7 @@
                     </div>
                     <div class="carousel-item-content content-4">
                         <img src="./images/clients-1-120x114.png">
-                    </div>
+                    </div> -->
                 </div>
                 <ol class="carousel-indicator">
                     <li></li>
@@ -1116,11 +1157,12 @@
     </footer>
 
 
-
-
-
-
-    <!-- // Script// -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'
+        integrity='sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=='
+        crossorigin='anonymous'></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.js"></script>
 
 
 </body>
