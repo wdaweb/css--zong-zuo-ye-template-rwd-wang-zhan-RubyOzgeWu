@@ -1,0 +1,142 @@
+#section10 {
+    width: 100%;
+    height: 600px;
+    padding: 50px 0;
+    background: url(../images/bg-pattern-1.jpg);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#section10 .container {
+    width: 100%;
+    height: 600px;
+}
+
+#section10 h2 {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    line-height: 31px;
+    text-align: center;
+    margin-top: 0;
+
+}
+
+#section10 .swiper.mySwiper {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 495px;
+    padding: 0 15px;
+    /* display: flex;
+    flex-direction: column; */
+
+    /* left: -100%; */
+}
+
+#section10 .swiper-wrapper{
+    height: 495px;
+}
+#section10 .swiper-slide {
+    /* border: 1px solid red; */
+    width: 330px;
+    height: 395px;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+
+}
+#section10 .img-box{
+    width: 100%;
+}
+
+#section10 .img-box img {
+    width: 100%;
+    height: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+#section10 .post-content{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+#section10 .post-content .time,
+#section10 .post-content .text {
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.65px;
+    line-height: 20.8px;
+    text-align: left;
+    color: var(--deepGray);
+}
+
+#section10 .post-content .time {
+    margin: 0;
+}
+
+#section10 .post-content .text {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+#section10 .post-content h5 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    line-height: 27px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#section10 .post-content a {
+    text-decoration: none;
+    color: black;
+}
+
+#section10 .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--green);
+    margin-top: 20px;
+}
+
+/* -------------------------RWD: 768px---------------------- */
+@media(min-width:768px){
+    #section10{
+        height: 630px;
+    }
+    #section10 h2{
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: 1.75px;
+        line-height: 41px;
+    }
+}
+
+/* --------------------------RWD: 1200px----------------------- */
+@media(min-width:1200px){
+    #section10{
+        height: 100vh;
+    }
+    #section10 h2{
+        font-size: 55px;
+        font-weight: 500;
+        letter-spacing: 2.75px;
+        line-height: 65px;
+    }
+    #section10 .swiper.mySwiper{
+        margin-top: 50px;
+    }
+    #section10 .swiper-slide{
+        height: 450px;
+    }
+}

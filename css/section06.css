@@ -1,0 +1,172 @@
+#section06 {
+    width: 100%;
+    height: 515px;
+    padding: 50px 0;
+    background: url(../images/bg-pattern-1.jpg);
+    font-family: 'Poppins', sans-serif;
+}
+
+#section06 .container {
+    width: 100%;
+}
+
+#section06 h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    line-height: 30.7px;
+    text-align: center;
+}
+
+#section06 .carousel {
+    margin-top: 30px;
+    /* border: 1px solid blue; */
+    /* width: 300%; */
+    width: 100%;
+    display: flex;
+    position: absolute;
+    /* left: -200%; */
+
+}
+
+#section06 .swiper.mySwiper {
+    margin-bottom: 30px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+#section06 .swiper-slide {
+    padding: 0 15px;
+}
+
+#section06 .swiper-slide>p:first-child {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: var(--deepGray);
+}
+
+#section06 .user {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#section06 .user>img {
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#section06 .user>p:nth-child(2) {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    line-height: 22.4px;
+}
+
+#section06 .user>p:nth-child(3) {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.325px;
+    line-height: 20.8px;
+    color: var(--green);
+}
+
+#section06 .swiper-button-prev,
+#section06 .swiper-button-next {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    color: rgb(163, 163, 163);
+    letter-spacing: 0.7px;
+    line-height: 25.2px;
+}
+
+
+#section06 .swiper-button-prev {
+    position: absolute;
+    top: 60%;
+    left: 5px;
+    /* transform: translateY(-50%); */
+    padding-left: 15px;
+}
+
+#section06 .swiper-button-prev::after {
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: rgb(163, 163, 163);
+    position: absolute;
+    top: 35px;
+}
+
+#section06 .swiper-button-next {
+    position: absolute;
+    top: 60%;
+    right: 5px;
+    /* transform: translateY(-50%); */
+    padding-right: 15px;
+}
+
+#section06 .swiper-button-next::after {
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: rgb(163, 163, 163);
+    position: absolute;
+    top: 35px;
+}
+
+/* -----------------------------RWD: 768px--------------------------- */
+@media(min-width:768px){
+    #section06 h2{
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: 1.75px;
+        line-height: 41px;
+    }
+
+    #section06 .swiper-slide>p{
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.36px;
+        line-height:36px;
+    }
+
+    #section06 .user{
+        padding-top: 50px;
+    }
+
+}
+
+@media(min-width:1200px){
+    #section06 h2{
+        font-size: 55px;
+        font-weight: 500;
+        letter-spacing: 2.75px;
+        line-height:65px;
+    }
+
+    #section06 .swiper-slide>p{
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.75px;
+        line-height:24px;
+        padding: 0 70px;
+    }
+    #section06 .user{
+        padding-top: 70px;
+    }
+
+
+}

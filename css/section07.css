@@ -1,0 +1,227 @@
+#section07 {
+    width: 100%;
+    height: 3350px;
+    padding: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    /* background: lightyellow; */
+}
+
+#section07 .container {
+    padding: 0 15px;
+    /* border: 1px solid black; */
+}
+
+#section07 h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+    line-height: 30px;
+
+}
+
+#section07 .wrap {
+    width: 100%;
+    margin-top: 30px;
+    /* border: 1px solid blue; */
+}
+
+#section07 .select {
+    width: 95px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 1px 15px;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 25px;
+
+}
+
+#section07 .select:hover {
+    background-color: var(--green);
+    color: white;
+    transition: all 0.2s;
+    border: none;
+}
+
+#section07 .caret {
+    margin-left: 5px;
+    transition: all 0.2s;
+}
+
+#section07 .caret.caret-rotate {
+    transform: rotate(180deg);
+    transition: all 0.2s;
+}
+
+#section07 .menu {
+    /* border: 1px solid black; */
+    list-style: none;
+    text-align: center;
+    width: 280px;
+    padding: 15px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px 0px 10px 0px;
+    display: none;
+}
+
+#section07 .menu li {
+    color: var(--deepGray);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.28px;
+    line-height: 14px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#section07 .menu.menu-open {
+    display: block;
+    animation: fadeIn 0.2s;
+}
+
+#section07 .filter-box-all {
+    display: flex;
+    flex-direction: column;
+}
+
+#section07 .col {
+    /* padding: 0 15px; */
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#section07 .card {
+    /* border: 1px solid black; */
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(243, 243, 243);
+}
+
+#section07 .card img {
+    width: 270px;
+}
+
+#section07 .card-caption {
+    padding: 15px;
+}
+
+#section07 .card-caption a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+
+#section07 .card-caption p {
+    margin: 0;
+    /* margin-top: 6px; */
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#section07 .card-caption span {
+    color: var(--green);
+}
+
+#section07 .btn-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#section07 .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+#section07 .btn-search {
+    background: var(--deepGray);
+}
+
+#section07 .btn-search i {
+    color: white;
+}
+
+#section07 .btn-shoppingCar {
+    background: var(--green);
+    color: white;
+    margin-left: 15px;
+}
+
+
+/* filter-box-fruits-------------- */
+#section07 .filter-box-fruits {
+    display: none;
+}
+
+
+
+/* ----------------------------RWD:768px------------------------- */
+@media(min-width:768px) {
+    #section07{
+        height: 1800px;
+    }
+    #section07 .filter-box-all {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #section07 h2{
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: 1.75px;
+        line-height: 41px;
+    }
+
+}
+
+
+/* ----------------------------RWD: 1200px------------------------- */
+@media(min-width:1200px){
+    #section07{
+        height: 1400px;
+    }
+    #section07 .filter-box-all {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #section07 .all{
+        width: 50%;
+    }
+    #section07 .col-fruits{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #section07 .col-vegetables{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #section07 h2{
+        font-size: 55px;
+        font-weight: 500;
+        letter-spacing: 2.75px;
+        line-height: 65px;
+    }
+
+}

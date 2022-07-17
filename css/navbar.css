@@ -1,0 +1,400 @@
+#navbar {
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    flex-grow: 1;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.navbar-hide {
+    width: 100%;
+    height: 50px;
+    background: white;
+    position: fixed;
+    top: 56px;
+    left: 0;
+    z-index: 999;
+    display: none;
+    align-items: center;
+    box-shadow: inset rgba(1, 3, 4, 0.19) 0px 1px 2px 0px;
+}
+
+/* ---------------toggler---------------- */
+#navbar .nav-toggler {
+    font-size: 25px;
+    float: left;
+    line-height: 56px;
+    cursor: pointer;
+    padding: 15.5px;
+}
+
+#navbar .nav-toggler i.fa-bars {
+    display: block;
+
+}
+
+#navbar .nav-toggler i.fa-x {
+    display: none;
+}
+
+
+/* -----------------menu------------------ */
+#navbar .menu {
+    width: 268px;
+    height: 100vh;
+    /* border: 1px solid red; */
+    background: white;
+    position: absolute;
+    top: 56px;
+    left: -268px;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+#navbar .menu.show {
+    left: 0px;
+}
+
+#navbar .menu ul {
+    list-style: none;
+}
+
+#navbar .menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+#navbar .menu li {
+    /* border: 1px solid blue; */
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    line-height: 16.8px;
+    padding: 9px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar .menu li:hover {
+    background: var(--green);
+    color: white;
+}
+
+#navbar .menu li:hover a {
+    display: block;
+    color: white;
+}
+
+#navbar i.rotate {
+    transform: rotate(180deg);
+    transition: all 0.2s;
+}
+
+
+#navbar .pages-dropdown {
+    text-indent: 1rem;
+}
+
+#navbar .blog-dropdown {
+    text-indent: 1rem;
+}
+
+#navbar .shop-dropdown {
+    text-indent: 1rem;
+}
+
+#navbar .home {
+    background: var(--green);
+}
+
+#navbar .home a {
+    color: white;
+}
+
+
+/* --------------------logo-------------------- */
+#navbar .logo {
+    margin-right: 110px;
+}
+
+#navbar .logo img {
+    width: 120px;
+}
+
+/* ---------------------search---------------- */
+#navbar .search {
+    width: 30px;
+}
+
+#navbar .search i {
+    font-size: 24px;
+}
+
+.navbar-hide.show {
+    display: flex;
+}
+
+
+.navbar-hide .search-box {
+    position: absolute;
+    width: 100%;
+    min-height: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-hide input {
+    width: 75%;
+    height: 45px;
+    border: none;
+}
+
+.navbar-hide button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    background: white;
+}
+
+.navbar-hide button i {
+    font-size: 24px;
+}
+
+
+/* ---------------------lang-------------------------- */
+#navbar .lang {
+    width: 33px;
+    height: 33px;
+    background: var(--green);
+    border-radius: 50%;
+    position: relative;
+}
+
+#navbar .lang p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#navbar .lang-dropdown {
+    /* border: 1px solid red; */
+    width: 33px;
+    position: absolute;
+    top: 45px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+    display: none;
+}
+
+#navbar .lang-dropdown.show {
+    display: block;
+}
+
+#navbar .lang-dropdown ul {
+    list-style: none;
+}
+
+#navbar .lang-dropdown li {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 5px;
+}
+
+#navbar .lang-dropdown li:active {
+    background: var(--green);
+    color: white;
+}
+
+/* -------------------------popover---------------------------- */
+#navbar .popover {
+    width: 32px;
+    height: 48px;
+    position: relative;
+}
+
+#navbar .popover i {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#navbar .popover-info {
+    width: auto;
+    font-size: 15px;
+    position: fixed;
+    right: 0;
+    top: 56px;
+    padding: 15px;
+    box-shadow: 0 0 5px 0 rgb(1 3 4 / 19%);
+    text-align: center;
+    background: white;
+    display: none;
+    /* transform: translate3d(0,-10px,0); */
+}
+
+#navbar .popover-info.show {
+    display: block;
+}
+
+#navbar .popover-text {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+
+#navbar .popover-text a {
+    text-decoration: none;
+    color: var(--deepGray);
+}
+
+#navbar .shopping-car {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.shopping-car i {
+    color: black;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.shopping-car i:hover {
+    color: black;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.shopping-car span {
+    font-size: 12px;
+    font-weight: bolder;
+    color: var(--green);
+    position: absolute;
+    top: 0;
+    right: -12px;
+}
+
+@media(min-width:768px) {
+    #navbar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-toggler {
+        width: 10%;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+    .search {
+        width: 10%;
+    }
+
+    .lang {
+        width: 10%;
+    }
+
+    .popover {
+        width: 10%;
+    }
+}
+
+
+@media(min-width:1200px) {
+    #navbar {
+        width: 100%;
+        height: 184px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        padding-top:40px;
+        background: #6eaec7;
+    }
+    .navbar-hide{
+        display: none;
+    }
+
+    #navbar .nav-toggler {
+        display: none;
+    }
+
+    #navbar .logo {
+        width: 75%;
+        padding-left: 42%;
+    }
+    #navbar .logo img{
+        width: 231px;
+    }
+
+    #navbar .search {
+        width: 5%;
+        align-self: flex-start;
+        padding-top: 5px;
+
+
+    }
+    #navbar .search i{
+        font-size: 30px;
+        color: white;
+    }
+
+    #navbar .lang {
+        width: 40px;
+        height: 40px;
+        align-self: flex-start;
+    }
+
+    #navbar .popover {
+        width: 5%;
+        align-self: flex-start;
+    }
+    #navbar .popover i{
+        font-size: 34px;
+        color: white;
+    }
+
+    #navbar .menu {
+        width: 100%;
+        height: 80px;
+        padding: 0 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 105px;
+        left: 0;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        background: transparent;
+    }
+
+    #navbar .menu ul {
+        display: flex;
+        color: white;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.75px;
+        line-height: 24px;
+        
+    }
+
+}

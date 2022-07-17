@@ -1,0 +1,235 @@
+#section02 {
+    background: #707070;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: url(../images/bg-pattern-1.jpg);
+}
+
+#section02 .container {
+    /* border: 1px solid black; */
+    padding: 2rem 0;
+}
+
+#section02 .row {
+    flex-direction: column;
+    position: relative;
+}
+
+#section02 .col {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#section02 .back-col {
+    /* border: 2px solid red; */
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.svg-box {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+    background: var(--green);
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.svg-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#section02 h4 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin: 0;
+    padding: 0;
+}
+
+#section02 a {
+    text-decoration: none;
+    color: black;
+}
+
+#section02 p {
+    font-size: 13px;
+    color: var(--deepGray);
+    margin-top: 10px;
+    line-height: 20.8px;
+    /* padding: 0 8px; */
+}
+
+
+/* RWD */
+/* -----------------768px--------------------------- */
+@media(min-width:768px) {
+    #section02 {
+        height: 645px;
+        padding: 90px 0;
+    }
+
+    #section02 .container {
+        padding: 0;
+        display: flex;
+    }
+
+    #section02 .row {
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+    #section02 .group.group-1,
+    #section02 .group.group-2{
+        width: 45%;
+    }
+    #section02 .group.back-group{
+        width: 10%;
+    }
+
+    #section02 .col {
+        max-width: 300px;
+        padding: 0 15px;
+    }
+
+    #section02 .back-col {
+        display: block;
+    }
+
+    #section02 .back-col img {
+        width: 120px;
+        padding: 0 15px;
+    }
+
+    .svg-box {
+        width: 70px;
+        height: 70px;
+    }
+
+    #section02 h4 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        line-height: 30px;
+    }
+
+    #section02 p {
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.375px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+}
+
+/* -----------------------RWD 1200px -------------------------------*/
+@media(min-width:1200px) {
+    #section02 {
+        padding: 110px 10px;
+        height: 595px;
+    }
+
+    #section02 .container {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+
+    #section02 .row {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+
+    }
+
+    #section02 .group.group-1,
+    #section02 .group.group-2{
+        width: 35%;
+    }
+    #section02 .group.back-group{
+        width: 30%;
+    }
+
+    #section02 .col {
+        max-width: 500px;
+        padding: 0 15px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #section02 .back-group img{
+        width: 364px;
+    }
+    #section02 .group-1 .svg-box {
+        order: 2;
+    }
+    #section02 .group-1 .col .inner-text h4,
+    #section02 .group-1 .col .inner-text p{
+        text-align: right;
+    }
+    #section02 .group-2 .col .inner-text h4,
+    #section02 .group-2 .col .inner-text p{
+        text-align: left;
+    }
+
+
+    #section02 .col:nth-child(1) .inner-text,
+    #section02 .col:nth-child(3) .inner-text{
+        margin-right: 15px;
+    }
+
+    #section02 .col:nth-child(2) .inner-text,
+    #section02 .col:nth-child(4) .inner-text{
+        margin-left: 15px;
+    }
+
+    #section02 .inner-text{
+        width: 265px;
+    }
+
+
+    #section02 .inner-text h4 {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 1.8px;
+        line-height: 36px;
+        
+    }
+
+    #section02 .inner-text p {
+        text-align: right;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.375px;
+        line-height: 24px;
+    }
+
+    #section02 .svg-box{
+        width: 90px;
+        height: 90px;
+        margin: 0;
+    }
+    #section02 .group-1 .svg-box{
+        margin-left: 15px;
+    }
+    #section02 .group-2 .svg-box{
+        margin-right: 15px;
+    }
+
+}
